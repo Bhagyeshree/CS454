@@ -1,0 +1,15 @@
+{
+  "name": "Math Quiz Demo",
+  "version": "1.0.0",
+  "description": "Math Quiz Demo",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cydney Auman",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.5.1",
+    "yargs": "^1.3.3"
+  }
+}
