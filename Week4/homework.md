@@ -18,6 +18,6 @@ Create a Task Manager App using Angular.js.
 
   - User can mark employee task as complete. Once marked as complete total time to complete tasks should be updated.
    
- - Ability to search tasks throughout the entire app.
+- Ability to search tasks throughout the entire app.
  
- -  Try to handle errors where appropriate.
+-  Try to handle errors where appropriate.
