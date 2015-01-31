@@ -25,7 +25,7 @@ Each team member will present for 2-3 minutes. The presentation should cover top
  - Morning (Akshay, Kuntal, Mohit)
 - moment
 - fs-extra
- - Afternoon (Andrew, Jaimin) 
+ - Afternoon (Andrew, Jaimin, Kevin) 
 - validator
  - Afternoon (Saurin, Todd, Varun)
 - mongoose
