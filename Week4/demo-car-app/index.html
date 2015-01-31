@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+<head>
+  <title>AngularJS Demo</title>
+
+  <script
+    type="text/javascript"
+    src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js">
+  </script>
+
+  <script
+    type="text/javascript"
+    src="core.js">
+  </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="core.css" />
+
+</head>
+<body>
+  <header class="navbar navbar-inverse navbar-static-top">
+    <span class="navbar-brand" ng-hide="checked">Search All: 
+      <input class="dark" ng-model="search.$">
+    </span>
+    <span class="navbar-brand" ng-show="checked" >Search Make: 
+      <input class="dark" ng-model="search.make">
+    </span>
+    <span class="navbar-brand"><input type="checkbox" ng-model="checked"> make only</span>   
+  </header>
+  
+  <div class="container">
+    
+    <div class="col-md-3">
+      <div class="row">
+        <h3>Add Car</h3>
+          <form class="form-horizontal" ng-controller="newcarController" ng-submit="addCar()">
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Make: </label>
+              <div class="col-sm-10">
+                <input type="text" ng-model="newcar.make">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Model: </label>
+              <div class="col-sm-10">
+                <input type="text" ng-model="newcar.model">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Year: </label>
+              <div class="col-sm-10">
+                <input type="number" ng-model="newcar.year">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Type: </label>
+              <div class="col-sm-10">
+                <select ng-init="newcar.type = 'options[0]'"ng-options="o for o in options" ng-model="newcar.type"></select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-sm-2 control-label">Price: </label>
+              <div class="col-sm-10">
+                <input type="number" ng-model="newcar.price">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-primary" type="submit">Add Car</button>
+              </div>
+            </div>
+         </form>
+       </div>
+    </div>
+
+
+
+    <div class="col-md-5" ng-controller="carController">
+      <div class="row">
+        <h3> Inventory</h3>
+        <ul>
+          <li class="list" ng-repeat="car in cars | filter:search" >
+            {{ car.year }} {{ car.make }} {{ car.model }} | {{car.type}} <br/>
+            <b>{{car.price | currency }}</b>
+            <button class="btn btn-sm btn-warning pull-right glyphicon glyphicon-arrow-down"
+                    ng-click="decrease(car)">  
+              Price
+            </button>
+            <button class="btn btn-sm btn-default pull-right glyphicon glyphicon-arrow-up" 
+                    ng-click="increase(car)">
+              Price
+            </button>
+            <button class="btn btn-sm btn-success pull-right glyphicon" ng-click="sell(car)">
+              <b>Sell</b>
+            </button>
+          </li>
+        </ul>
+      </div>
+    
+    </div>
+
+
+    <div class="col-md-4" ng-controller="soldController">
+      <h3> Sold</h3>
+      <ul>
+        <li class="list" ng-repeat="car in sold" >
+          {{ car.year }} {{ car.make }} {{ car.model }} | {{car.type}} - {{car.price | currency }}
+        </li>
+      </ul>
+
+      <h4>Comission: {{comission() | currency }}</h4>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
