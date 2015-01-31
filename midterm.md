@@ -29,7 +29,7 @@ Each team member will present for 2-3 minutes. The presentation should cover top
 - validator
  - Afternoon (Saurin, Todd, Varun)
 - mongoose
- - Morning (Anuj, Vishal)
+ - Morning (Anuj, Vishal, Praveen, Sai)
  - Afternoon (David, Pablo, Clifford, Ali)
 - mysql
 - hoek
