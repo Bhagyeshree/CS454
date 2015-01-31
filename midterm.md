@@ -25,14 +25,17 @@ Each team member will present for 2-3 minutes. The presentation should cover top
  - Morning (Akshay, Kuntal, Mohit)
 - moment
 - fs-extra
+ - Afternoon (Andrew, Jaimin) 
 - validator
  - Afternoon (Saurin, Todd, Varun)
 - mongoose
- - Morning (Anuj, Vishal)
+ - Morning (Anuj, Vishal, Praveen, Sai)
+ - Afternoon (David, Pablo, Clifford, Ali)
 - mysql
 - hoek
  - Morning (Rishi , Venkat ,Amit , Sachin)
 - traverse
+ - Afternoon(Shruti, Dhruvika, Parul, Dhruva, Priyal)
 - hapi
  -  Morning (Shreyas, Gaurav, Sachin)
 - koa
@@ -40,6 +43,7 @@ Each team member will present for 2-3 minutes. The presentation should cover top
 - socket.io 
   - Morning (Harsh, Niket, Nilay, Abhijeet)
 - csv
+ - Afternoon(Bhagyesshree, Poonam)
 - ?
 
 #### Disallowed
