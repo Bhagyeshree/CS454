@@ -37,6 +37,7 @@ Each team member will present for 2-3 minutes. The presentation should cover top
 - traverse
  - Afternoon(Shruti, Dhruvika, Parul, Dhruva, Priyal)
 - hapi
+ - Afternoon (Mohammad, Hani)
  -  Morning (Shreyas, Gaurav, Sachin)
 - koa
 - request
