@@ -1,0 +1,21 @@
+extends master
+
+block content
+  .container
+    .jumbotron.text-center
+      h2 Top 3 Github Repos by Language
+
+    .container(ng-controller='topThreeController')
+      .col-md-12
+        div.row
+          .div(ng-repeat='top in topThree')
+            h4 {{ top.full_name }}
+            p {{ top.description }} - 
+              a {{top.url}}
+            hr
+      .col-md-12
+        div.row
+          form
+            .form-group
+              input.form-control.input-lg.text-center(type='text', ng-model='form.language')
+              button.btn.btn-primary.btn-lg.pull-right(type='submit', ng-click='getTopThree()') Get 'Em

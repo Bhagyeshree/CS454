@@ -1,0 +1,35 @@
+extends master
+
+block content
+  .container
+    .jumbotron.text-center
+      h2 Github Versus
+
+    .container(ng-controller='versusController')
+      .col-md-12
+        div.row
+          .col-md-6 
+            .div(ng-repeat='one in versus[form.language1]')
+              h4 {{ one.full_name }}
+              p(style="min-height: 90px") {{ one.description }} - 
+                a {{one.url}}
+              hr
+          .col-md-6 
+            .div(ng-repeat='two in versus[form.language2]')
+              h4 {{ two.full_name }}
+              p(style="min-height: 90px") {{ two.description }} - 
+                a {{two.url}}
+              hr
+      .col-md-12
+        div.row
+          form
+            .form-group
+              label language
+              input.form-control.text-center(type='text', ng-model='form.language1')
+            .form-group
+              h2(style="text-align: center") VS.
+            .form-group
+              label language
+              input.form-control.text-center(type='text', ng-model='form.language2')
+
+            button.btn.btn-danger.btn-lg(type='submit', ng-click='getVersus()') Go!
