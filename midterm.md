@@ -3,49 +3,64 @@
 Teams will create a presentation on a node module listed on npm - https://www.npmjs.com/.
 
 
-Each team member will present for 2-3 minutes. The presentation should cover topics like:
+Each team member will present for 2-3 minutes. The presentation should cover:
 
- - What problem does your node module solve?
- 
- - Are there any other competitors to your node module?
-   - If so, what are they?
-   - How does the competitive module differ?
+1 - Explain what is your node module?
 
- - What kind of documentation is available for your module?
- 
- - Any additional details I should know about your module?
+2 - What problem or problems does your node module solve when using it inside a node application?
+
+3 - Are there any competitor modules - meaning modules that do the same thing or something very similar?
+ - If so what are they?
+ - How are they different?
+ - Are they better or worse?
+
+4 - Where can you find documentation on your module?
+ - Does the documentation cover all the methods in the module?
+ - Is the documentation lacking in any way?
+
+5 - Are there any additional details I should know about node module you picked?
 
 **Teams should keep in mind as they research their module, that the Final Presentation will need to include unique code examples from each team member.**
 
 ####Suggestions
 - lodash
  - Afternoon (Song, Yakun, Yinchu, Qiao)
-- async
+ 
 - q
  - Morning (Akshay, Kuntal, Mohit)
+
 - moment
+ - Morning (Rishi, Venkat, Amit, Sachin)
+ 
 - fs-extra
  - Afternoon (Andrew, Jaimin, Kevin) 
+ 
 - validator
  - Afternoon (Saurin, Todd, Varun)
+
 - mongoose
  - Morning (Anuj, Vishal, Praveen, Sai)
  - Afternoon (David, Pablo, Clifford, Ali)
-- mysql
-- hoek
- - Morning (Rishi , Venkat ,Amit , Sachin)
+ 
 - traverse
- - Afternoon(Shruti, Dhruvika, Parul, Dhruva, Priyal)
+ - Afternoon (Shruti, Dhruvika, Kumari Parul, Dhruva, Priyal)
+ 
 - hapi
+ - Morning (Shreyas, Gaurav, Sachin)
  - Afternoon (Mohammad, Hani)
- -  Morning (Shreyas, Gaurav, Sachin)
+
 - koa
+ - Morning (Rohan, Darshit, Ravi, Sania, Peter) 
+
 - request
+ - Morning (Yue, Raylong) 
+
 - socket.io 
-  - Morning (Harsh, Niket, Nilay, Abhijeet)
+ - Morning (Harsh, Niket, Nilay, Abhijeet)
+
 - csv
  - Afternoon(Bhagyesshree, Poonam)
-- ?
+
 
 #### Disallowed
 - express
