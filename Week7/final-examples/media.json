@@ -1,0 +1,33 @@
+{
+  "entries": [{
+    "company": "Github",
+    "media": [
+      ["facebook", 50000],
+      ["instagram", 40000],
+      ["twitter", 55000],
+      ["youtube", 25000]
+    ]
+  }, {
+    "company": "Google",
+    "media": [
+      ["facebook", 120000],
+      ["instagram", 90000],
+      ["twitter", 13000],
+      ["youtube", 37500]
+    ]
+  }, {
+    "company": "Yahoo",
+    "media": [
+      ["facebook", 99000],
+      ["instagram", 80000],
+      ["twitter", 10000],
+      ["youtube", 26000]
+    ]
+  }],
+  "totals": {
+    "facebook": 269000,
+    "twitter": 78000,
+    "instagram": 210000,
+    "youtube": 88500
+  }
+}

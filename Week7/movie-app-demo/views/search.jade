@@ -1,0 +1,21 @@
+extends master
+
+block content
+  .container
+    .jumbtron.text-center
+      h2 Search a Movie
+
+    .container(ng-controller="movieController")
+      .col-md-12 
+        h4 {{movie.title}}
+        p {{movie.year}}
+         span {{movie.mpaa_rating}}
+        p {{movie.synopsis}}
+
+      .col-md-12
+        form
+          .form-group
+            input.form-control.text-center(type="text", ng-model="title")
+            br
+            button.btn.pull-right(type="submit", ng-click="searchMovies()") search
+
