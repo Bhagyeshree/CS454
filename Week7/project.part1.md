@@ -15,7 +15,7 @@ Build a web application using Node.js and Angular.js that allows a user to searc
 
     -- Sign up for an API key - http://developer.marvel.com/
     
-    -- REQUEST Format
+    -- Base REQUEST Format
       -- http://gateway.marvel.com/v1/public/comic?apikey=xxxx&ts=xxxx&hash=xxxx
         -- apikey = your assigned PUBLIC api key after registering at developer.marvel.com
         
@@ -28,6 +28,6 @@ Build a web application using Node.js and Angular.js that allows a user to searc
 
 ##### Extra Credit
 
-    -- Display character image - 5 pts
+    -- Display the searched character image - 5 pts
     -- Originality of Web Design - up to 10 pts
 
