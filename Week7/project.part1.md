@@ -1,6 +1,6 @@
 ### Node // Angular Project - DUE 3/28/2015 11:59pm
 
-##### PART 1 - 50 pts
+##### PART 1 - 40 pts
 
 Build a web application using Node.js and Angular.js that allows a user to search for a Marvel Character by name using the Marvel Developer's API
 
