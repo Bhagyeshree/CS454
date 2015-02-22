@@ -15,14 +15,14 @@ Build a web application using Node.js and Angular.js that allows a user to searc
 
     -- Sign up for an API key - http://developer.marvel.com/
     
-    -- Base REQUEST Format
+    -- Base REQUEST Format - https://developer.marvel.com/documentation/authorization
       -- http://gateway.marvel.com/v1/public/comic?apikey=xxxx&ts=xxxx&hash=xxxx
         -- apikey = your assigned PUBLIC api key after registering at developer.marvel.com
         
         -- ts (timestamp) = the current time 
            *HINT*: how do we get time (not date) in JavaScript ??
            
-        -- hash = MD5 hash of (PRIVATE KEY + PUBLIC KEY + ts)
+        -- hash = MD5 hash of (ts + private key + public key)
            *HINT*: http://nodejs.org/api/crypto.html
 
 
