@@ -19,7 +19,7 @@ Build a web application using Node.js and Angular.js that allows a user to searc
     -- Base REQUEST Format
       -- http://www.comicvine.com/api/characters/?api_key=xxxx&filter=name:xxxx&format=json
       
-      ++ api_key - the key you are assigned when registeringm
+      ++ api_key - the key you are assigned when registering
       ++ format - setting the response type to json
       ++ filter - filter on specific criteria - in this case filter on a character's name
 
