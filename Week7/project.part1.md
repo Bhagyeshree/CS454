@@ -16,7 +16,7 @@ Build a web application using Node.js and Angular.js that allows a user to searc
     -- Sign up for an API key - http://www.comicvine.com/api/
     -- API Documentation - http://www.comicvine.com/api/documentation
     
-    -- Base REQUEST Format
+    -- REQUEST Format
       -- http://www.comicvine.com/api/characters/?api_key=xxxx&filter=name:xxxx&format=json
       
       ++ api_key - the key you are assigned when registering
