@@ -16,7 +16,7 @@ app.factory('resources', function($resource) {
 app.controller('topThreeController', function($scope, resources) {
 
   $scope.getTopThree = function() {
-    resources.routes.github.top({type: 'top-3', language: $scope.form.language}, function done(response) {
+    resources.routes.github.top({type: 'top-three', language: $scope.form.language}, function done(response) {
       $scope.topThree = response;
     });
   };
@@ -24,11 +24,13 @@ app.controller('topThreeController', function($scope, resources) {
 
 app.controller('versusController', function($scope, resources) {
 
-
   $scope.getVersus = function() {
     var languages = [$scope.form.language1, $scope.form.language2];
+    console.log(languages)
+
     resources.routes.github.versus({type: 'versus', languages: languages}, function done(response) {
       $scope.versus = response;
     });
   };
 });
+

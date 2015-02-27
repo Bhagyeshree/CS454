@@ -14,15 +14,15 @@ module.exports = function(app) {
         if (err || res.statusCode != 200) {
           res.send(err)
         } else {
-          console.log(response.body);
           res.json(_.first(response.body.items, 3));
         }
       });
   });
 
   app.get('/api/versus', function(req, res) {
-    async.map(req.query.languages, search, function(err, results) {
-      res.json(_.object(req.query.languages, results));
+
+    async.map(req.query.languages, search, function(er, result) {
+      res.json(_.object(req.query.languages, result));
     });
   });
 
@@ -31,8 +31,20 @@ module.exports = function(app) {
 function search(lang, next) {
   superagent
     .get(github + '/search/repositories?q=language:' + lang + '&sort=stars')
-    .set('Accept', 'application/json')
     .end(function(err, response) {
       next(err, _.first(response.body.items, 3));
-  });
-};
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
