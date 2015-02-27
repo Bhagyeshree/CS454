@@ -5,7 +5,7 @@ var fs = require('fs');
 
 // Poor Code Examples
 
-// EXAMPLE 1
+// EXAMPLE 1 - 0/50 - because these are copy pasted from github
 //ascending order
 async.sortBy([1,9,3,5], function(x, callback){
     callback(null, x);
@@ -22,7 +22,7 @@ async.sortBy([1,9,3,5], function(x, callback){
 } );
 
 
-// EXAMPLE 2
+// EXAMPLE 2 - 10/50 - weak code with no value - this could be done without using async module
 var facebooks = [{
   company: 'Github',
   likes: 500000,
@@ -46,10 +46,9 @@ async.each(facebooks, function(facebook, callback) {
 
 
 
-// Good Code Example
+// Good Example - 50/50 - if you you can show this type of example and be able to explain the code in detail
 var media = require('./media');
 var mapping = require('./mappings');
-
 
 async.waterfall([
   function arrayToObject(next) {
