@@ -1,9 +1,10 @@
-###Final - 3/21/15 - 100pts (50pts for overall teamwork and presentation + 50pts as an individual work and presentation).
+###Final - 3/21/15 <br/>
+#####100pts (50pts for overall teamwork and presentation + 50pts for individual work and presentation).
 
 Teams will present unique code examples demonstating a method or overall functionality of their module.
 
 
-Each team member will present for 3-5 minutes.  Each team member is responsible for presenting on a unique code use case from the module.  The code should not be from an example found online from npm, github, stackoverflow, etc.
+Each team member will present for 3-5 minutes.  Each team member is responsible for presenting on a unique code use case from their selected module.  The code should not be from an example found online from npm, github, stackoverflow, etc.
 
  - You should be able to explain your code in detail and why you chose that approach.  
 
