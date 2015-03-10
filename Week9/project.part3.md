@@ -11,17 +11,20 @@ Adding new feature to the web application built from Part 2.
  
  - When the user clicks the versus button - they are taken to a new page which shows basic info (name, origin, deck, publisher) and the stats (listed below) between the two characters.  Both the character and the enemy should have details buttons.
 
-
+ ##### Teams
   - Number of Teams
   - Top 3 Teams
 
+ ##### Powers
   - Number of Powers
   - Top 5 Powers
 
+ ##### Friends
   - Number of Friends
   - Top 10 friends
   - link to details page
 
+ ##### Enemies
   - Number of Enemies
   - Top 10 enemies
   - link to details page
