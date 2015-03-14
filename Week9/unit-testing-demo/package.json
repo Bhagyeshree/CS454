@@ -1,0 +1,14 @@
+{
+  "name": "unit-testing-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Cydney",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^2.1.1"
+  }
+}
