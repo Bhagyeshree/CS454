@@ -1,0 +1,38 @@
+extends master
+
+block content
+  .container(ng-controller='repoController')
+
+    .col-md-12
+      div.row
+        form
+          .input-group
+            input.form-control.input-md(type="text", ng-model="name")
+            span.input-group-btn
+              button.btn.btn-md.btn-warning.pull-right(type="submit", ng-click="fetchRepo()") fetch repo
+
+    .col-md-12(ng-show="repo")
+      div.row
+        h4 {{repo.repoDetails.full_name}}
+        p  {{ repo.repoDetails.description }}
+        p
+          a(href="{{repo.repoDetails.homepage}}") {{repo.repoDetails.homepage}}
+        
+        hr
+        h3 Stats
+        p
+          b stargazers: 
+          | {{repo.repoDetails.stargazers_count}}
+        p
+          b forks: 
+          | {{repo.repoDetails.forks_count}}
+        
+        hr
+        h3 Languages
+        table.table.table-striped(style="width: 50%")
+          tr(ng-repeat="(key, value) in repo.repoLanguages")
+            td
+            td
+              b {{key}} 
+            td {{value | number:2}} %
+
