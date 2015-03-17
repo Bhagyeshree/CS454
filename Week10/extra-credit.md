@@ -13,8 +13,8 @@ Each fucntion should have a practical and useful test.
  4.  test to ensure a file was written.
  5.  create only fixtures that are needed.  give the fixtures meaningful names.
 
-**No points for failing tests.**
-**No points if assertions (expect statements) are not made.**
+**No points for failing tests.** <br>
+**No points if assertions (expect statements) are not made.** <br>
 **No points if an assertion is made that is unrelated to the function being tested.**
 
 #### HINTS
