@@ -12,7 +12,7 @@ module.exports = function (app) {
       .query({page_limit: 9})
       .end(function(err, result) {
         if (err || result.statusCode !== 200) {
-          res.send(err);
+          res.json(JSON.parse(result.text));
         }
         else {
           console.log('///// movies search');

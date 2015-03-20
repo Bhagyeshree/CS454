@@ -26,10 +26,16 @@ app.controller('movieController', function($scope, resources) {
 
   $scope.searchMovies = function() {
     resources.routes.movieAPI.fetch({title: $scope.title}, function done(response) {
-      if (response.movies.length > 0)
-        $scope.movies = { main: response.movies[0], alternatives: response.movies };
-      else 
-        $scope.movies = response.movies;
+      if (response.movies) {
+
+        if (response.movies.length > 0)
+          $scope.movies = { main: response.movies[0], alternatives: response.movies };
+        else 
+          $scope.movies = response.movies;
+
+      } else {
+        $scope.error = response.error || 'Unknown error occured';
+      }
     });
   };
 
